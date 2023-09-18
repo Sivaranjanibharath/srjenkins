@@ -42,7 +42,7 @@ pipeline {
         }
         stage('Release to prod') {
             steps {
-                bat 'echo Releasing to prod'
+                sh 'echo Releasing to prod'
             }
         }
     }
