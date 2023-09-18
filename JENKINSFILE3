@@ -3,11 +3,13 @@ pipeline {
     stages {
         stage('pre -build') {
             steps {
+                sh 'sleep 5'
                 sh 'echo Pre-build'
             }
         }
         stage('build') {
             steps {
+                sh 'sleep 2'
                 sh 'echo Build in progress.'
             }
         }
